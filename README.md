@@ -19,5 +19,5 @@ Se trato de hacer el algoritmo de manera mas sencilla y simplificada posible
 - [@SebastianRamirez](https://github.com/Sebastian-Rb)
 - Andres Toscano
 - Arianna Mosquera
-- Nadia Guerrero
+- Victor Ronquillo
 - Jose Vallejo
