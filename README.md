@@ -2,7 +2,7 @@
 ![Logo](https://www.unemi.edu.ec/wp-content/uploads/2021/09/LOGO-WEB-AZUL.png)
 
 
-# Tarea de algoritmo N°2 - Grupal
+# Tarea de algoritmo N°3 - Grupal
 
 Hola, trabajo grupal numero 3, 24 ejercicios solucionados de javascript con bosquejo 
 Ademas contiene un menu de seleccion que ejecutara el ejercicio que cuenten con la enumeracion del 1 al 24
