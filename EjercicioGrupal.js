@@ -36,7 +36,7 @@ function gradosaf(){
     const num = parseInt (read(' Ingresar numero: '));
     const numDoble = num * 2;
     const numTriple = num *3;
-    console.log('El doble de ${num} es:${numDoble} y el triple de ${num} es:${numTriple}');
+    console.log("El doble de",num  ,"es: ", numDoble, "y el triple de", num, "es:", numTriple);
     }
     
     
@@ -65,8 +65,8 @@ function gradosaf(){
         console.log (numeros);
         const sumaNumeros = numeros [0] + numeros [1] + numeros [2] + numeros [3];
         const mediaAritmetica = sumaNumeros / 4;
-        console.log('La suma de los numeros es: ${sumaNumeros}');
-        console.log('Su media aritmetica es:${mediaAritmetica}');
+        console.log("La suma de los numeros es: ",sumaNumeros)
+        console.log("Su media aritmetica es:",mediaAritmetica)
     }
     
     
@@ -88,7 +88,7 @@ function gradosaf(){
     const KG = 0.453593;
     const pesoKg = pesoLibras * KG;
     const pesoGramos = pesoLibras * 453.592;
-    console.log('${pesoLibras} libras convertidos en kilogramos es ${pesoKg.toFixed(2)}kg y convertidos en gramos es ${pesoGramos}g');
+    console.log(pesoLibras, "libras convertidos en kilogramos es" ,pesoKg.toFixed(2),"kg y convertidos en gramos es", pesoGramos);
     }
     
     //5.-Diseñar un algoritmo que resuelva la siguiente expresión matemática: 
@@ -106,15 +106,15 @@ function gradosaf(){
     
     //Ejercicio JavaScript
     
-    function resolucion(a, b, c) {
-        const senA = Math.sin(a)
-        const cosB = Math.cos(b)
-        const numeroEntero = Math.trunc(a)
+    function resolucion() {
+        const senA = Math.sin(4)
+        const cosB = Math.cos(5)
+        const numeroEntero = Math.trunc(4)
         const mod2 = numeroEntero % 2
-        const raizCubica = Math.sqrt(Math.pow(a, 3))
-        const aPorbMasc = (a * b) + c
+        const raizCubica = Math.sqrt(Math.pow(4, 3))
+        const aPorbMasc = (4 * 5) + 7
         const resultado = ((senA + cosB) * mod2) + (raizCubica / aPorbMasc)
-        return resultado;
+        console.log("El resultado de la expresion matematica es: ", resultado, "Los valores de a,b y c son 4,5 y 7")
     }
 
 // !-------- Victor -----------!
