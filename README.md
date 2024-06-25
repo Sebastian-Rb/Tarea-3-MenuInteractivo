@@ -2,22 +2,19 @@
 ![Logo](https://www.unemi.edu.ec/wp-content/uploads/2021/09/LOGO-WEB-AZUL.png)
 
 
-# Tarea de algoritmo N°3 - Grupal
+# Tarea de algoritmo N°4 Completa - Pagina Web
 
-Hola, trabajo grupal numero 3, 24 ejercicios solucionados de javascript con bosquejo 
-Ademas contiene un menu de seleccion que ejecutara el ejercicio que cuenten con la enumeracion del 1 al 24
+Hola, trabajo grupal numero 4.
+Parte 2 - Menu de seleccion en HTML conectado a JavaScript con un menu de ejercicio
 
-La linea de codigo de node prompt sync esta adjunta para su ejecucion.
-
-Los signos ? y ! son para la extension de better comments
-Se trato de hacer el algoritmo de manera mas sencilla y simplificada posible
-
-
+El css esta incluido, contiene los estilos de la pagina
+Archivos img y carpetas ya creadas
+Se incluyen los ejercicios dados, transformados en una pagina de HTML que se conecta a su ejecucion en Js.
 
 ## Authors
 
 - [@SebastianRamirez](https://github.com/Sebastian-Rb)
-- Andres Toscano
-- Arianna Mosquera
 - Victor Ronquillo
-- Jose Vallejo
+- Arianna Mosquera
+- Misael Monserrate
+- Andres Toscano

@@ -1,0 +1,244 @@
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <label for="message-input">Mensaje: </label>
+        <input type="text" id="message-input">
+        <label for="count-input">Cantidad: </label>
+        <input type="number" id="count-input">
+        <button onclick="Ejercicio1()">Mostrar Mensajes</button>
+    </div>
+    <div id="message-container"></div>
+    <script>
+        function Ejercicio1() {
+            let mensaje = document.getElementById('message-input').value;
+            let N = parseInt(document.getElementById('count-input').value)
+            let container = document.getElementById('message-container')
+            container.innerHTML = ''
+            for (let i = 0; i < N; i++) {
+                let p = document.createElement('p')
+                p.textContent = mensaje
+                container.appendChild(p)
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+<html>
+<body>
+    <div>
+        <label for="number-input">Ingrese un número :</label>
+        <input type="number" id="number-input">
+        <button onclick="Ejercicio2()">Mostrar Múltiplos de 7</button>
+    </div>
+    <div id="multiplos-container">
+    </div>
+    <script>
+        function Ejercicio2() {
+            let N = parseInt(document.getElementById('number-input').value)
+            let multiplos = []
+
+            for (let i = 1; i <= N; i++) {
+                if (i % 7 === 0) {
+                    multiplos.push(i)
+                }
+            }
+
+            let container = document.getElementById('multiplos-container')
+            container.innerHTML = '<p>' + multiplos.join('</p><p>') + '</p>'
+        }
+    </script>
+</body>
+</html>
+
+
+
+<html>
+<body>
+    <div>
+        <label for="base-input">Ingrese un número base:</label>
+        <input type="number" id="base-input">
+        <label for="number-input">Ingrese un número N:</label>
+        <input type="number" id="number-input">
+        <button onclick="Ejercicio3()">Mostrar Múltiplos</button>
+    </div>
+    <div id="multiplos-container">
+    </div>
+    <script>
+        function Ejercicio3() {
+            let base = parseInt(document.getElementById('base-input').value)
+            let N = parseInt(document.getElementById('number-input').value)
+            let multiplos = [];
+
+            for (let i = 1; i <= N; i++) {
+                if (i % base === 0) {
+                    multiplos.push(i)
+                }
+            }
+            let container = document.getElementById('multiplos-container')
+            container.innerHTML = ''
+            for (let j = 0; j < multiplos.length; j++) {
+                let p = document.createElement('p')
+                p.textContent = multiplos[j]
+                container.appendChild(p)
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+<html>
+<body>
+    <div>
+        <label for="numbers-input">Ingrese números separados por comas:</label>
+        <input type="text" id="numbers-input">
+        <button onclick="ejercicio4()">Mostrar Positivos</button>
+        <button onclick="limpiarContenedor()">Limpiar</button>
+    </div>
+    <div id="positivos-container">
+    </div>
+    <script>
+        function ejercico4() {
+            let input = document.getElementById('numbers-input').value.trim()
+            let numeros = input.split(',')
+            let container = document.getElementById('positivos-container')
+            container.innerHTML = ''
+            numeros.forEach(numero => {
+                let num = parseFloat(numero.trim())
+                if (!isNaN(num) && num > 0) {
+                    let p = document.createElement('p')
+                    p.textContent = num;
+                    container.appendChild(p);
+                }
+            });
+        }
+        function limpiarContenedor() {
+            let container = document.getElementById('positivos-container')
+            container.innerHTML = ''
+        }
+    </script>
+</body>
+</html>
+
+
+
+<html>
+    <body>
+        <div>
+            <label for="numbers-input">Ingrese números separados por comas:</label>
+            <input type="text" id="numbers-input">
+            <button onclick="EJercicio5()">Mostrar Pares</button>
+            <button onclick="limpiarContenedor()">Limpiar</button>
+        </div>
+        <div id="pares-container">
+        </div>
+        <script>
+            function EJercicio5() {
+                let input = document.getElementById('numbers-input').value.trim()
+                let numeros = input.split(',')
+                let container = document.getElementById('pares-container')
+                container.innerHTML = ''
+                numeros.forEach(numero => {
+                    let num = parseInt(numero.trim())
+                    if (!isNaN(num) && num % 2 === 0) {
+                        let p = document.createElement('p')
+                        p.textContent = num
+                        container.appendChild(p)
+                    }
+                })
+            }
+            function limpiarContenedor() {
+                let container = document.getElementById('pares-container')
+                container.innerHTML = ''
+            }
+        </script>
+    </body>
+    </html>
+
+
+
+
+<html>
+<body>
+    <div>
+        <label for="numero-input">Ingrese un número:</label>
+        <input type="number" id="numero-input">
+        <button onclick="EJercicio6()">Mostrar Divisores</button>
+        <button onclick="limpiarContenedor()">Limpiar</button>
+    </div>
+    <div id="divisores-container">
+    </div>
+    <script>
+        function EJercicio6() {
+            let num = parseInt(document.getElementById('numero-input').value.trim())
+            let divisores = []
+            for (let i = 1; i <= num; i++) {
+                if (num % i === 0) {
+                    divisores.push(i)
+                }
+            }
+            let container = document.getElementById('divisores-container')
+            container.innerHTML = ''
+            divisores.forEach(divisor => {
+                let p = document.createElement('p')
+                p.textContent = divisor
+                container.appendChild(p)
+            })
+        }
+        function limpiarContenedor() {
+            let container = document.getElementById('divisores-container')
+            container.innerHTML = ''
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<html>
+<body>
+    <div>
+        <label for="inicio-input">Inicio:</label>
+        <input type="number" id="inicio-input" value="1">
+        <label for="fin-input">Fin:</label>
+        <input type="number" id="fin-input" value="10">
+        <button onclick="ejercicio8()">Mostrar Tabla</button>
+        <button onclick="limpiarTabla()">Limpiar</button>
+    </div>
+    <div id="tabla-container">
+    </div>
+
+    <script>
+        function ejercicio8() {
+            let inicio = parseInt(document.getElementById('inicio-input').value.trim())
+            let fin = parseInt(document.getElementById('fin-input').value.trim())
+            let container = document.getElementById('tabla-container')
+            container.innerHTML = ''
+            for (let i = inicio; i <= fin; i++) {
+                let tabla = document.createElement('div')
+                tabla.classList.add('tabla-item')
+                tabla.innerHTML = `<h3>Tabla del ${i}:</h3>`
+                for (let j = 1; j <= 10; j++) {
+                    let resultado = i * j
+                    tabla.innerHTML += `<p>${i} x ${j} = ${resultado}</p>`
+                }
+                container.appendChild(tabla)
+            }
+        }
+        function limpiarTabla() {
+            let container = document.getElementById('tabla-container')
+            container.innerHTML = ''
+        }
+    </script>
+</body>
+</html>
+
+
+

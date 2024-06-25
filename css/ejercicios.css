@@ -1,0 +1,111 @@
+body {
+    font-family: 'LXGW WenKai TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 20px;
+}
+
+a { /* Para eliminar hipervínculo */
+    text-decoration: none; 
+    background: none; 
+    color: inherit; 
+}
+
+.titulos {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+    height: 50px;
+}
+
+.usuario {
+    font-family: 'Tiny5', sans-serif;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.titulos {
+    margin-bottom: 20px;
+}
+
+.sombras {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sombras-ejercicios ol {
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"],
+input[type="submit"],
+textarea {
+    padding: 10px;
+    font-size: 1em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #3f51b5;
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0; /* Para que el footer se quede en la parte inferior izquierda, evita bug */
+}
+
+/* Fuentes de letra */
+.lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
